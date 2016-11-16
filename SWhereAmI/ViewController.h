@@ -14,6 +14,7 @@
     CLLocationManager *myLocation;
 }
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
+- (IBAction)viewMapButton:(id)sender;
 
 
 @end

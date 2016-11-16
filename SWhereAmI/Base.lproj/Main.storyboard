@@ -27,9 +27,22 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="a0u-p7-PwJ"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUI-Qi-1Du">
+                                <rect key="frame" x="43" y="660" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="RCy-yi-Z85"/>
+                                    <constraint firstAttribute="width" constant="46" id="Zxy-52-bKJ"/>
+                                </constraints>
+                                <state key="normal" title="Map"/>
+                                <connections>
+                                    <action selector="viewMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eld-zh-age"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Jww-0Y-uxN" firstAttribute="leading" secondItem="rUI-Qi-1Du" secondAttribute="trailing" constant="-74" id="ISG-De-WbY"/>
+                            <constraint firstItem="rUI-Qi-1Du" firstAttribute="top" secondItem="Jww-0Y-uxN" secondAttribute="bottom" constant="-56" id="Zu7-4K-rEh"/>
                             <constraint firstItem="Jww-0Y-uxN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="bsh-vS-clv"/>
                             <constraint firstItem="Jww-0Y-uxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-5" id="cjR-MK-Swz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Jww-0Y-uxN" secondAttribute="trailing" id="e3e-iM-f71"/>
